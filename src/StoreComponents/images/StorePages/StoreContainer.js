@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import RealityPage, {VirtualReality} from "./virtualReal";
 import SpeakersStore, {speakers} from "./speakers";
 import LaptopPage, {LaptopStore} from "./laptops";

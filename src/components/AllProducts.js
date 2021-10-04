@@ -57,7 +57,7 @@ const AllProductsPage = () => {
     }
     const addToCart = (product) => {
         console.log('we are in addTocart')
-        setCart([...cart,{... product}])
+        setCart([...cart,{...product}])
         console.log(cart)
         setTotal(total => total + product.price)
     }
