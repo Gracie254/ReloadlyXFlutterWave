@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ReloadlyXFlutterWave/static/css/main.12fa3491.chunk.css",
-    "main.js": "/ReloadlyXFlutterWave/static/js/main.c9029f57.chunk.js",
-    "main.js.map": "/ReloadlyXFlutterWave/static/js/main.c9029f57.chunk.js.map",
+    "main.js": "/ReloadlyXFlutterWave/static/js/main.2cfbdb47.chunk.js",
+    "main.js.map": "/ReloadlyXFlutterWave/static/js/main.2cfbdb47.chunk.js.map",
     "runtime-main.js": "/ReloadlyXFlutterWave/static/js/runtime-main.0285c74d.js",
     "runtime-main.js.map": "/ReloadlyXFlutterWave/static/js/runtime-main.0285c74d.js.map",
-    "static/js/2.afca5dac.chunk.js": "/ReloadlyXFlutterWave/static/js/2.afca5dac.chunk.js",
-    "static/js/2.afca5dac.chunk.js.map": "/ReloadlyXFlutterWave/static/js/2.afca5dac.chunk.js.map",
+    "static/js/2.2308e399.chunk.js": "/ReloadlyXFlutterWave/static/js/2.2308e399.chunk.js",
+    "static/js/2.2308e399.chunk.js.map": "/ReloadlyXFlutterWave/static/js/2.2308e399.chunk.js.map",
     "index.html": "/ReloadlyXFlutterWave/index.html",
     "static/css/main.12fa3491.chunk.css.map": "/ReloadlyXFlutterWave/static/css/main.12fa3491.chunk.css.map",
-    "static/js/2.afca5dac.chunk.js.LICENSE.txt": "/ReloadlyXFlutterWave/static/js/2.afca5dac.chunk.js.LICENSE.txt",
+    "static/js/2.2308e399.chunk.js.LICENSE.txt": "/ReloadlyXFlutterWave/static/js/2.2308e399.chunk.js.LICENSE.txt",
     "static/media/index.css": "/ReloadlyXFlutterWave/static/media/image6.da149766.png",
     "static/media/image 11.1648670c.png": "/ReloadlyXFlutterWave/static/media/image 11.1648670c.png",
     "static/media/image 12.cd544d59.png": "/ReloadlyXFlutterWave/static/media/image 12.cd544d59.png",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0285c74d.js",
-    "static/js/2.afca5dac.chunk.js",
+    "static/js/2.2308e399.chunk.js",
     "static/css/main.12fa3491.chunk.css",
-    "static/js/main.c9029f57.chunk.js"
+    "static/js/main.2cfbdb47.chunk.js"
   ]
 }
