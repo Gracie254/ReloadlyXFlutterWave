@@ -13,7 +13,7 @@ const ConfirmPassWord = () => {
         <input type="password" id="confirm" ref={confirmPasswordRef} placeholder="1234"/>
         <button className="btn">Continue</button>
         </form>
-        <h5>Already Have An Account.<Link to="/" style={{"color": "#ff782d"}}>Sign In</Link></h5>
+        <h5>Already Have An Account.<Link to="/" style={{color: "#ff782d"}}>Sign In</Link></h5>
         </div>
     )
 }

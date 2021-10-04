@@ -1,11 +1,10 @@
 import React, { useState} from 'react'
-import image1 from '../StoreComponents/images/image3.png'
 import { FiMinus, FiPlus, FiShoppingBag} from 'react-icons/fi'
 import { withRouter, Link } from 'react-router-dom'
 import MyFooterNav from './footerNavbar'
 import { topdeals } from '../StoreComponents/recommended'
 import { FaAngleRight } from 'react-icons/fa'
-import { matchPath } from 'react-router'
+
 
 const MakePurchase = (props) => {
     console.warn(props)
@@ -20,13 +19,6 @@ const MakePurchase = (props) => {
     }
     const [newDeals] = useState(topdeals)
    
-    const { image } = props
-    const match1 = matchPath(`/prod/${props.match.params.image}`, {
-        path: "/prod/:big",
-        exact: true,
-        strict: true
-    })
-    console.log(image)
     return (
         <>
         <div className="details-component">
@@ -67,7 +59,7 @@ const MakePurchase = (props) => {
             <h3>Top Reviews(3)</h3>
             <div className="reviews-section">
                 <aside>
-            <div style={{"width": "3rem","height":"3rem", "border-radius":"50%", backgroundColor: 'whitesmoke'}}><img src="" alt=""/></div>
+            <div style={{width: "3rem",height:"3rem", borderRadius:"50%", backgroundColor: 'whitesmoke'}}><img src="" alt=""/></div>
             <div>
             <p>Name</p>
             <p>Rating</p>

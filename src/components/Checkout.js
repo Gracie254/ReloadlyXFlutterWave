@@ -1,7 +1,6 @@
 import React , {useState} from 'react'
 import { FaAngleDown, FaPaypal, FaCcVisa, FaAngleUp, FaCcMastercard } from 'react-icons/fa'
 import { FiSave } from 'react-icons/fi'
-import { loginUser } from './Buy Airtime'
 import MyFooterNav from './footerNavbar'
 
 const CheckoutPage =() => {
@@ -12,7 +11,7 @@ const CheckoutPage =() => {
     const [expire, setExpire] = useState('')
     const [cvv, setCvv] = useState('')
     const [discount, setDiscount] = useState('')
-    const [cardName] = useState('')
+   
     const [first, setFirst] = useState('')
     const [last, setLast] = useState('')
     const [phone, setPhone] = useState('')
@@ -28,7 +27,7 @@ const CheckoutPage =() => {
     const secondSubmit = (event) => {
         event.preventDefault()
     }
-    console.log(loginUser)
+
     return (
         <>
         <h2>Checkout</h2>

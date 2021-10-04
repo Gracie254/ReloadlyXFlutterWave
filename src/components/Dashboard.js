@@ -15,7 +15,7 @@ const MyDashBoard = () => {
     const [shopLaptops] = useState(laptops)
     const [shopPhones] = useState(phones)
     const [rechargePhone] = useState(recharge)
-    const [cart, setCart] = useState([])
+  
     // const addToCart = (topdeals) => {
     //     console.log('we are in addTocart')
     //     setCart([...cart, topdeals])

@@ -7,7 +7,6 @@ import MyDashBoard from './Dashboard'
 import MyNavbar from './navbar'
 import MyStore from '../StoreComponents/images/StorePages/StoreContainer'
 import { AuthProvider } from '../Context/AuthContext'
-import MyShoppingCart from './ShoppingCart'
 import AllProductsPage from './AllProducts';
 import MakePurchase from './BuyProduct'
 import Airtime from './Buy Airtime'
@@ -28,7 +27,7 @@ const EntryPage = () => {
             </AuthProvider>
             </Switch>
             <Switch>
-                 <Route path="/cart" component={MyShoppingCart} /> 
+                 
                 
                 <Route path="/checkout" component={CheckoutPage} />
             </Switch>

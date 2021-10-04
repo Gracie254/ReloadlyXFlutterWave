@@ -8,7 +8,7 @@ const LoginPage = () => {
     const passwordRef = useRef()
     const { login} = useAuth()
     const [error, setError] = useState('')
-    const [loading, setLoading] = useState(false)
+    
     const history = useHistory()
   async function handleSubmit(e){
     e.preventDefault()
@@ -17,6 +17,7 @@ const LoginPage = () => {
         await login(emailRef.current.value, passwordRef.current.value)
         history.push("/dash")
     }catch{
+        console.log(error)
         setError('Failed to log in. Check if details are correct')
     }
    }

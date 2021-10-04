@@ -7,21 +7,7 @@ import PlantsPage, {PlantsStore} from "./plants";
 import PhonesPage, {PhonesStore} from "./phones";
 
 const MyStore = () => {
-    const [storeFilter, setStoreFilter] = useState(StoreProducts)
     
-   
-
-    useEffect(()=>{
-        setStoreFilter(storeFilter)
-    }, [storeFilter])
-    const filterItems = (event) => {
-        if(event.target.value === 'all'){
-            return storeFilter(StoreProducts)
-        }
-        else {
-
-        }
-    }
     return (
         <div className="entireStore">
             

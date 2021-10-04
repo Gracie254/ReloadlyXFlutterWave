@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const MyFooterNav = () => {
     
@@ -16,9 +17,9 @@ const MyFooterNav = () => {
              </div>
              <div className="page-navigate">
                  <h1>Pages</h1>
-                 <h3>Home</h3>
-                 <h3>Shop</h3>
-                 <h3>Buy Airtime</h3>
+                 <Link to="/dash" className="mylink"><h3>Home</h3></Link>
+                <Link to="/prod" className="mylink"> <h3>Shop</h3></Link>
+                <Link to="/airtime" className="mylink"><h3>Buy Airtime</h3></Link>
                  <h3>Contact</h3>
              </div>
              <div className="Newsletter">

@@ -10,11 +10,11 @@ const airtimePurchase = [
     
 
 ]
-export const loginUser = async values => {
-  const res = await fetch({ url: 'localhost:3000/airtime', method: "POST", body: values });
-  const data = await res.json();
-  return data;
-};
+// export const loginUser = async values => {
+//   const res = await fetch({ url: 'localhost:3000/airtime', method: "POST", body: values });
+//   const data = await res.json();
+//   return data;
+// };
 
 export default function Airtime() {
     const [airtime, setAirtime] = useState('')
@@ -49,9 +49,9 @@ export default function Airtime() {
                 <Link to="./checkout"><button style={{"background":"orange"}} id="bt">Proceed To Checkout</button></Link>
                 </div>
             </form>
-            <button onClick={()=>{ 
+            {/* <button onClick={()=>{ 
                 const { airtime, topup } =useState
-                loginUser({airtime, topup})}}>getstate</button>
+                loginUser({airtime, topup})}}>getstate</button> */}
            <p>{airtime}</p>
            <p>{topup}</p>
             <footer><MyFooterNav /></footer>

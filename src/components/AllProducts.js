@@ -43,7 +43,7 @@ const AllProductsPage = () => {
     const [total, setTotal] = useState(0)
      const [cart, setCart] = useState([])
      const [page, setPage] = useState(PAGE_PRODUCTS)
-     const [quantity, setQuantity] = useState(1)
+    
        const renderCart = () => {
         return (
         <>
@@ -61,12 +61,7 @@ const AllProductsPage = () => {
         console.log(cart)
         setTotal(total => total + product.price)
     }
-    const increaseQuantity = () => {
-        setQuantity(val => val + 1)
-    }
-    const decreaseQuantity = () => {
-        setQuantity(val => val - 1)
-    }
+   
     const removeFromCart = (productToRemove) => {
        setCart(cart.filter((product) => product !== productToRemove))
        setTotal(total => total -productToRemove.price)
@@ -89,7 +84,7 @@ const AllProductsPage = () => {
                    return (
                        <div className="singleDeal" key={idx}>
                            <div id="top"><Link to={"/purchase/"+product.id+"/"+product.descr+"/"+product.price+""+product.image} className="mylink">
-                           <div id="top=price">{product.deal}</div></Link>
+                           <div id="top-price">{product.deal}</div></Link>
                             <div onClick={()=>addToCart(product)}><FaShoppingBag /></div></div>
                            <img src={product.image} alt={product.descr} />
                            
