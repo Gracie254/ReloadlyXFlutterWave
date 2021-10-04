@@ -24,15 +24,7 @@ const MyStore = () => {
     }
     return (
         <div className="entireStore">
-            <section>
-                <button value="all" onClick={filterItems}>All Products</button>
-                <button value="virtual" onClick={filterItems}>Virtual Reality Tech</button>
-                <button value="volume" onClick={filterItems}>Speakers</button>
-                <button value="system" onClick={filterItems}>Laptops</button>
-                <button value="games" onClick={filterItems}>Gaming Controllers</button>
-                <button value="decor" onClick={filterItems}>Plants</button>
-                <button value="iphone" onClick={filterItems}>Phones</button>
-            </section>
+            
             <article>
                 <StoreProducts />
             </article>

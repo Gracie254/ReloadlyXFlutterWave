@@ -18,9 +18,9 @@ import image17 from './images/someplant.png'
 import data from './images/021-online payment.png'
 import airtime from './images/Group.png'
 const BestItems = [
-    {id:1, image:image2, descr:"PS4 Wireless Controller", price:"15000"},
-    {id:2, image:image3, descr:"Apple Air Pod", price:"30000"},
-    {id:3, image:image17, descr:"Green Bowl Indoor Plant", price:"12000"}
+    {id:1, image:image2, descr:"PS4 Wireless Controller", price:15000},
+    {id:2, image:image3, descr:"Apple Air Pod", price:30000},
+    {id:3, image:image17, descr:"Green Bowl Indoor Plant", price:12000}
 ]
 
 export const recharge = [
@@ -39,29 +39,30 @@ export const categories = [
 ]
 
 export const topdeals = [
-    {id:9, image:image1, descr:"PS5 Dual Sense Wireless Controller", price:"25000", deal:"15% OFF"},
-    {id:10, image:image4, descr:"PS4 Wireless Controller", price:"40000", deal:"50% OFF"},
-    {id:11, image:image3, descr:"Apple Air Pod", price:"25000", deal:"25% OFF"},
-    {id:12, image:image2, descr:"PS4 Wireless Controller", price:"47000", deal:"30% OFF"},
+    {id:9, image:image1, descr:"PS5 Dual Sense Wireless Controller", price:25000, deal:"15% OFF"},
+    {id:10, image:image4, descr:"PS4 Wireless Controller", price:40000, deal:"50% OFF"},
+    {id:11, image:image3, descr:"Apple Air Pod", price:25000, deal:"25% OFF"},
+    {id:12, image:image2, descr:"PS4 Wireless Controller", price:47000, deal:"30% OFF"},
 ]
 
 export const mygames = [
-    {id:13, image:image6, descr:"Sony PlayStation 5 Consolewith Wireless Controller", price:"250000"},
-    {id:14, image:image5, descr:"Wireless Mechanical Gaming Keyboard-Blue Switch", price:"50000"},
-    {id:15, image:image7, descr:"Cool Red Xbox Series X|S Controller Skin", price:"40000"},
-    {id:16, image:image8, descr:"Nintendo Switch Pro Controller", price:"25000"},
+    {id:13, image:image6, descr:"Sony PlayStation 5 Consolewith Wireless Controller", price:250000},
+    {id:14, image:image5, descr:"Wireless Mechanical Gaming Keyboard-Blue Switch", price:50000},
+    {id:15, image:image7, descr:"Cool Red Xbox Series X|S Controller Skin", price:40000},
+    {id:16, image:image8, descr:"Nintendo Switch Pro Controller", price:25000},
 ]
 export const laptops = [
     {id: 120, image:image11, descr:"Apple Macbook Air Model A1465", price:"600,000"},
-    {id: 121, image:image12, descr:"Gaming Laptops 15.6' 8G RAM SSD Laptop Intel Core I3", price:"320,000"},
-    {id: 122, image:image10, descr:"Microsoft Surface Laptop Go (12.40', Intel Core I5-10", price:"250,0000"},
-    {id: 123, image:image9, descr:"Lenovo Flex 5 2-In-1 14 Touch 8core 8gb 512gb", price:"130,000"},
+    {id: 121, image:image12, descr:"Gaming Laptops 15.6' 8G RAM SSD Laptop Intel Core I3", price:320000},
+    {id: 122, image:image10, descr:"Microsoft Surface Laptop Go (12.40', Intel Core I5-10", price:250000},
+    {id: 123, image:image9, descr:"Lenovo Flex 5 2-In-1 14 Touch 8core 8gb 512gb", price:130000},
 ]
 
 export const phones = [
-    {id: 124, image:image13, descr:"Tecno Camon Premier 15", price:"45000", dec:""},
-    {id: 124, image:image14, descr:"Apple Iphone 11 256GB", price:"350000", dec:""},
-    {id: 124, image:image15, descr:"Samsung Galaxy A11", price:"72000", dec:"13% OFF"},
-    {id: 124, image:image16, descr:"Apple Iphone 13 Pro Max", price:"450000", dec:"40% OFF"}
+    {id: 124, image:image13, descr:"Tecno Camon Premier 15", price:45000, dec:""},
+    {id: 124, image:image14, descr:"Apple Iphone 11 256GB", price:350000, dec:""},
+    {id: 124, image:image15, descr:"Samsung Galaxy A11", price:72000, dec:"13% OFF"},
+    {id: 124, image:image16, descr:"Apple Iphone 13 Pro Max", price:450000, dec:"40% OFF"}
 ]
+
 export default BestItems

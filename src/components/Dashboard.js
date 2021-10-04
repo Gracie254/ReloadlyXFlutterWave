@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import BestItems from '../StoreComponents/recommended'
 import { categories, phones, topdeals, mygames, laptops, recharge } from '../StoreComponents/recommended'
 import MyFooterNav from './footerNavbar'
+import { FiShoppingBag } from 'react-icons/fi'
 import vrguy from '../StoreComponents/images/image5.png'
 import { Link } from 'react-router-dom'
 
@@ -14,6 +15,11 @@ const MyDashBoard = () => {
     const [shopLaptops] = useState(laptops)
     const [shopPhones] = useState(phones)
     const [rechargePhone] = useState(recharge)
+    const [cart, setCart] = useState([])
+    // const addToCart = (topdeals) => {
+    //     console.log('we are in addTocart')
+    //     setCart([...cart, topdeals])
+    // }
     return (
         <>
            <div className="welcome-section">
@@ -27,10 +33,13 @@ const MyDashBoard = () => {
                        const { id, image, descr, price} = item
                        return (
                            <div className="product-item"key={id}>
-                               <img src={image} alt={descr}/>
+                               <p style={{"display":"grid", "grid-template-columns":"1fr", alignItems:"flex-end"}}> <FiShoppingBag size="1.3em"/></p>
+                               <img src={image} alt={descr} width="100%" height="50%" id="recimg"/>
                                <div className="descr">
                                <p>{descr}</p>
-                               <h4>{price}</h4>
+                               <h4><span >&#8358;</span>{price}</h4>
+                                
+                               
                                </div>
                            </div>
                        )
@@ -44,7 +53,7 @@ const MyDashBoard = () => {
                       const { id, image, descr} = airtime
                       return (
                           <div id="airtime" key={id}>
-                              <img src={image} alt="" />
+                              <Link to="./airtime"><img src={image} alt="" /></Link>
                               <h3>{descr}</h3>
                               </div>
                       )
@@ -74,10 +83,10 @@ const MyDashBoard = () => {
                    const { id, image, descr, price, deal} = mydeal
                    return (
                        <div className="singleDeal" key={id}>
-                           <div id="top">{deal}</div>
+                           <div id="top"><div id="top-price">{deal}</div><span><FiShoppingBag /></span></div>
                            <img src={image} alt={descr} />
                            <h5>{descr}</h5>
-                           <h4>{price}</h4>
+                           <h4><span >&#8358;</span>{price} </h4>
 
                            </div>
                    )
@@ -89,7 +98,7 @@ const MyDashBoard = () => {
                    <button className="explore-btn">Explore more</button>
                </div>
                <div className="gaming-section">
-                <h2>Gaming<span>See All</span></h2>
+                <div style={{"display":"grid", "grid-template-columns":"1fr 1fr"}}><h2>Gaming</h2><Link to="./prod" style={{"color": "green"}}><h2>See All</h2></Link></div>
                 <div className="shop-games">
                     {shopGames.map((game)=>{
                         const {id,image, descr, price} = game
@@ -97,7 +106,7 @@ const MyDashBoard = () => {
                             <div className="singleGame" key={id}>
                                 <img src={image} alt={descr} />
                                 <h3>{descr}</h3>
-                                <h4>{price}</h4>
+                                <h4><span >&#8358;</span>{price}</h4>
                             </div>
                         )
                     })}
@@ -107,12 +116,12 @@ const MyDashBoard = () => {
                <div className="image-section">
                    <div className="sect">
                        <h2 style={{"font-size":"2.0rem", "width":"17rem"}}>Explore the world of virtual reality</h2>
-                     <button className="explore-btn"><Link to="/mystore">Explore All</Link></button>
+                     <button className="explore-btn"><Link to="/mystore" className="mylink">Explore All</Link></button>
                    </div>
                    <img src={vrguy} alt=""/>
                </div>
                 <div className="gaming-section">
-                <h2>Gaming</h2>
+                <h2>Laptops</h2>
                 <div className="shop-games">
                     {shopLaptops.map((laptop)=>{
                         const {id, image, descr, price} = laptop
@@ -120,18 +129,18 @@ const MyDashBoard = () => {
                             <div className="singleGame" key={id}>
                                 <img src={image} alt={descr} />
                                 <h3>{descr}</h3>
-                                <h4>{price}</h4>
+                                <h4><span >&#8358;</span>{price}</h4>
                             </div>
                         )
                     })}
                 </div>
                </div>
-               <div className="second-image">
+               <div className="explore">
                     <p >The future of voice information sharing</p>
                     <button className="btn">Explore All</button>
                </div>
                <div className="gaming-section">
-                <h2>Gaming</h2>
+                <h2>Phones</h2>
                 <div className="shop-games">
                     {shopPhones.map((phone)=>{
                         const {id,image, descr, price, dec} = phone
@@ -140,7 +149,7 @@ const MyDashBoard = () => {
                                 <div>{dec}</div>
                                 <img src={image} alt={descr} />
                                 <h3>{descr}</h3>
-                                <h4>{price}</h4>
+                                <h4><span >&#8358;</span>{price}</h4>
                             </div>
                         )
                     })}

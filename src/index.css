@@ -1,13 +1,15 @@
 :root {
   --changeColor: #fff;
+  --textColor: rgb(8, 8, 8);
 }
 body {
   margin: 0;
-  width: 100vw;
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  background-color: #e5e5e5;
+  background-color: #f5f5f5;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,30 +20,37 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .top-bar {
-  max-width: 80vw;
+  width: 100vw;
   max-height: 10vh;
   display: grid;
   color: rgb(44, 44, 44);
-  margin: 2rem;
-  grid-template-columns: 1fr 4fr 2fr;
-  background-color: inherit;
+  margin-bottom: 3em;
+  grid-template-columns: 2fr 3fr 2fr;
+  background-color: var(--changeColor);
   font-size: 1.2em;
   position: sticky;
 }
 
 .app-logo {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 #pages,
 #account {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-#pages > h3 {
+#pages h3 {
   margin-right: 20px;
+
+  color: rgb(44, 44, 44);
+}
+.mylink {
+  text-decoration: none;
 }
 .email-label {
   text-align: start;
@@ -79,6 +88,7 @@ input {
 
 #email {
   margin: 20px;
+  width: 70%;
 }
 .btn {
   width: 60%;
@@ -115,7 +125,7 @@ input {
 
 .container {
   width: 90vw;
-  color: rgb(255, 255, 255);
+  color: var(--changeColor);
   border-radius: 40px;
   height: 80vh;
 
@@ -137,7 +147,7 @@ input {
   align-items: center;
   padding: 1.6em;
   background-size: cover;
-  margin-bottom: 8.7rem;
+  margin-bottom: 15rem;
 }
 
 .intro {
@@ -147,7 +157,7 @@ input {
   font-size: 2.7em;
   color: #ffffff;
 }
-input[type="search"] {
+#search {
   width: 50%;
   height: 3.1em;
   margin: 2.6rem;
@@ -160,7 +170,7 @@ input[type="search"] + p {
 
 .product {
   width: 80%;
-  height: 300px;
+  height: 280px;
   position: relative;
   z-index: 4;
   top: -5%;
@@ -172,16 +182,18 @@ input[type="search"] + p {
 
 .product-item {
   width: 15em;
-  height: 20em;
+  height: 280px;
   border-radius: 10px;
-  background-color: rgb(253, 251, 251);
-  color: #141b22;
+  background-color: var(--changeColor);
+  color: var(--textColor);
+  font-size: 0.8rem;
+  text-align: end;
+  padding: 5px;
 }
 
 .descr {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  margin-left: 10px;
 }
 
 .recharge {
@@ -253,11 +265,15 @@ input[type="search"] + p {
   text-align: start;
   color: #0f0f0fe3;
 }
+/* AllProducts */
 .deals-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 3rem;
+
+  width: 80w;
+  height: 40vh;
+  gap: 1rem;
 }
 .singleDeal {
   width: 15rem;
@@ -267,6 +283,12 @@ input[type="search"] + p {
   padding-top: 10px;
 }
 #top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+#top-price {
   background-color: #ffa573;
   width: 5rem;
   margin: 10px;
@@ -301,11 +323,11 @@ input[type="search"] + p {
 }
 
 .shop-games {
-  width: 100%;
-  height: 20rem;
+  width: 90%;
+  height: 40vh;
   display: flex;
-  margin: 4rem;
-  gap: 2rem;
+  margin: 4em;
+  gap: 1em;
   justify-content: center;
   align-items: center;
 }
@@ -315,8 +337,8 @@ input[type="search"] + p {
   color: #19191ae8;
 }
 .singleGame {
-  width: 25rem;
-  height: 20rem;
+  width: 15em;
+  height: 20em;
   border-radius: 20px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.932);
@@ -354,22 +376,20 @@ input[type="search"] + p {
   width: 70vw;
   height: 15rem;
   margin: 3.4rem;
+  font-size: 2rem;
+  color: #e5e5e5;
   background: url("./StoreComponents/images/Rectangle\ 38.png");
+  border-radius: 50px;
 }
 
 .store-container {
-  width: 50em;
-  height: 15em;
+  width: 60vw;
+  height: 40vh;
   display: flex;
   margin: 1em;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.4) 99.04%
-  );
+  background: var(--changeColor);
   border: 1px solid #ffffff;
   box-sizing: border-box;
-  backdrop-filter: blur(10px);
 }
 
 .store-content {
@@ -451,7 +471,8 @@ article {
 }
 
 #cart-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .store-btn {
@@ -461,20 +482,36 @@ article {
   border: none;
   border-radius: 10px;
   color: white;
+  justify-content: end;
 }
 
 footer {
-  width: 90vw;
-  height: 25rem;
+  width: 100vw;
+  height: 20rem;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #141b22;
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 30px;
 }
 /* shoppingcart */
+
+.social-accounts {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#account-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 10px;
+  background-color: rgba(122, 122, 122, 0.274);
+  margin: auto;
+}
 .header {
   position: relative;
   left: -30%;
@@ -544,35 +581,275 @@ footer {
   width: 4rem;
   height: 4rem;
 }
+.shipping,
+.payment {
+  max-width: 40em;
+  background-color: var(--changeColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 30px;
+}
+/* .mylink {
+  
+} */
+#firstName,
+#lastName,
+#phone,
+#cardname,
+#cardnum,
+#expire,
+#cvv,
+#discount {
+  width: 95%;
+}
+
+.airtime {
+  display: flex;
+  gap: 1em;
+}
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10em;
+  height: 10em;
+  position: relative;
+  left: 30%;
+}
+.brands > img {
+  width: 100%;
+  height: 50%;
+}
+
+.air {
+  display: grid;
+  grid: 1fr 1fr;
+  width: 40vw;
+  position: relative;
+  left: 30%;
+  text-align: start;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "header" "section"
+    "sidebar content";
+}
+#bt {
+  height: 50px;
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+}
+.air > input {
+  width: 50%;
+}
+
+.cartproducts {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 0;
+}
+
+.allproducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  position: relative;
+  align-items: center;
+  z-index: 0;
+}
+.color-options {
+  min-width: 80%;
+}
+.btn-color {
+  min-width: 1.9rem;
+  min-height: 1.9rem;
+  margin: 0.4rem;
+  border-radius: 50%;
+}
+.red {
+  background-color: red;
+  border: none;
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.black {
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+.orange {
+  background-color: orangered;
+  border: none;
+}
+.blue {
+  background-color: rgb(17, 0, 255);
+  border: none;
+}
+.green {
+  background-color: rgb(1, 141, 25);
+  border: none;
+}
+.details-component {
+  padding: 40px;
+}
+.about-section,
+.reviews {
+  width: 45rem;
+  position: relative;
+  left: 10%;
+  text-align: start;
+}
+
+.reviews-section {
+  width: 50%;
+  min-height: 5rem;
+  background-color: white;
+}
+aside {
+  display: flex;
+}
+
+.related-prod {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  color: #141b22;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 70vw;
+}
+table td {
+  padding: 10px 75px;
+}
+table th > td {
+  border-right: 0;
+  padding: 0px 80px;
+}
+table th,
+table tr {
+  padding: 10px 10px;
+  border-bottom: 1px solid;
+}
+
+#imgnprod {
+  width: 7rem;
+  height: 4rem;
+}
+
+.summary {
+  background-color: var(--changeColor);
+  width: 30rem;
+  height: auto;
+  border-radius: 50px;
+}
+
+#totals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 1200px) {
-  /* shopping cart */
-  .personal {
-    left: -10%;
-    max-width: 80vw;
-  }
-  .cart-container {
-    flex-direction: column;
-  }
   #pages {
     display: none;
   }
-}
-@media screen and (max-width: 500px) {
-  .cart-container {
-    flex-direction: column;
+  .top-bar {
+    width: 100vw;
+    height: auto;
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
   }
-  .personal {
-    right: -50%;
-    max-width: 80vw;
-  }
-
-  .header {
-    left: 10%;
-  }
-
-  .details-component {
+  footer {
+    /* width: 95vw; */
     grid-template-columns: 1fr;
-    width: 70vw;
+    height: auto;
+  }
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100vw;
+  }
+  table td {
+    padding: 3px 2px;
+    margin: 1px;
+  }
+  table th,
+  table tr {
+    padding: 3px 2px;
+    border-bottom: 1px solid;
+    margin: 2px;
+  }
+
+  #imgnprod {
+    width: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fullStore {
+    min-width: 300px;
+  }
+  .welcome-section {
+    margin-bottom: 40rem;
+    width: 50rem;
+    position: relative;
+    left: 60%;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .product-item {
+    display: flex;
+    flex-direction: row;
+    width: 40rem;
+    font-size: 1.5rem;
+  }
+
+  #recimg {
+    width: 40%;
+  }
+  .singleDeal,
+  .shop-games {
+    width: 100%;
+  }
+  .singleGame {
+    min-width: 25rem;
+  }
+  .deals-container {
+    position: relative;
+    left: 40%;
+    width: 100vw;
+  }
+  .explore {
+    width: 35rem;
+    position: relative;
+    left: 50%;
+  }
+
+  .gaming-section {
+    position: relative;
+    left: 20%;
+    width: 100vw;
   }
 }

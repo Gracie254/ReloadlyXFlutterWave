@@ -35,8 +35,9 @@ const LoginPage = () => {
             <form onSubmit={handleSubmit} className="formStyle">
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" ref={emailRef} required placeholder="anypay123@gmail.com" />
-                <label htmlFor="pass">Password <span><Link to="/changepasscode" style={{"color": "#ff782d"}}>Forgot password</Link></span></label>
+                <label htmlFor="pass">Password <span></span></label>
                 <input type="password" id="pass" ref={passwordRef} required placeholder="1234"/>
+                <Link to="/changepasscode" style={{"color": "#ff782d"}}>Forgot password</Link>
                 <button type="submit" className="btn">Sign In</button>
             </form>
             <p>New to AnyPay.<Link to='/' style={{"color": "#ff782d"}}>Create Account</Link></p>
