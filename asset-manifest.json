@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ReloadlyXFlutterWave/static/css/main.155a6feb.chunk.css",
-    "main.js": "/ReloadlyXFlutterWave/static/js/main.eff58ae8.chunk.js",
-    "main.js.map": "/ReloadlyXFlutterWave/static/js/main.eff58ae8.chunk.js.map",
+    "main.css": "/ReloadlyXFlutterWave/static/css/main.75a4d3d1.chunk.css",
+    "main.js": "/ReloadlyXFlutterWave/static/js/main.8912b71d.chunk.js",
+    "main.js.map": "/ReloadlyXFlutterWave/static/js/main.8912b71d.chunk.js.map",
     "runtime-main.js": "/ReloadlyXFlutterWave/static/js/runtime-main.0285c74d.js",
     "runtime-main.js.map": "/ReloadlyXFlutterWave/static/js/runtime-main.0285c74d.js.map",
     "static/js/2.ccbf1387.chunk.js": "/ReloadlyXFlutterWave/static/js/2.ccbf1387.chunk.js",
     "static/js/2.ccbf1387.chunk.js.map": "/ReloadlyXFlutterWave/static/js/2.ccbf1387.chunk.js.map",
     "index.html": "/ReloadlyXFlutterWave/index.html",
-    "static/css/main.155a6feb.chunk.css.map": "/ReloadlyXFlutterWave/static/css/main.155a6feb.chunk.css.map",
+    "static/css/main.75a4d3d1.chunk.css.map": "/ReloadlyXFlutterWave/static/css/main.75a4d3d1.chunk.css.map",
     "static/js/2.ccbf1387.chunk.js.LICENSE.txt": "/ReloadlyXFlutterWave/static/js/2.ccbf1387.chunk.js.LICENSE.txt",
     "static/media/index.css": "/ReloadlyXFlutterWave/static/media/image6.da149766.png",
     "static/media/image 11.1648670c.png": "/ReloadlyXFlutterWave/static/media/image 11.1648670c.png",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.0285c74d.js",
     "static/js/2.ccbf1387.chunk.js",
-    "static/css/main.155a6feb.chunk.css",
-    "static/js/main.eff58ae8.chunk.js"
+    "static/css/main.75a4d3d1.chunk.css",
+    "static/js/main.8912b71d.chunk.js"
   ]
 }
